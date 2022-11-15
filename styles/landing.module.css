@@ -1,0 +1,234 @@
+.gambarLP{
+    margin-top: -550px;
+    margin-left: 40px;
+   width: 400px;
+   height: 400px;     
+}
+.gambarL1{
+    margin-top: 100px;
+   width: 480px;
+   height: 500px;     
+}
+.hal1{
+    margin-top: 130px;
+    /* padding-left: 120px; */
+    padding-right: 100px;
+}
+.waw{
+    margin-top: -100px;
+}
+.tak1{
+    margin-top: -150px;
+    margin-left: -430px;
+}
+.tak2{
+    margin-top: -90px;
+    margin-left: -30px;
+    height: 50px;
+}
+.bg{
+    background-color: #f1eded;
+    padding-left: 100px;
+}
+.tak3{
+    margin-top: -300px;
+    margin-left: -50px;
+}
+.btnLP{
+    border: none;
+    background-color: #5E50A1;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+}
+.tak4{
+    margin-left: -480px;
+    margin-top: -370px;
+}
+.foto4{
+    padding-top: 30px;
+}
+.hal3{
+    padding-top: 50px;
+}
+.foto6{
+    padding-left: 110px;
+}
+.foto7{
+    padding-left: 100px;
+}
+.foto8{
+    padding-left: 74px;
+}
+.tak5{
+    margin-top: -930px;
+    margin-left: -50px;
+}
+.hal5{
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+.pp{
+    margin-left: -130px;
+}
+.bagi{
+    background-color: #FFFFFF;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 50px;
+}
+.ha2{
+    margin-left: -250px;
+}
+.pageFour{
+    /* background-color: #E5E5E5; */
+    /* padding: 100px; */
+    height: max-content;
+    padding-top: 10px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+}
+.hal4{
+    margin-top: -100px;
+}
+.photoImage{
+    border: 10px solid #FBB0175E;
+    border-radius: 100%;
+}
+
+.textName{
+    color: #1F2A36;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.textProfession{
+    color: #9EA0A5;
+    font-size: 18px;
+}
+
+.textDescription{
+    color: #46505C;
+    font-size: 18px;
+}
+.btn1{
+    color: #796EAF;
+    border-radius: 5px;
+    border: none;
+    /* padding-top: 30px; */
+    height: 6vh;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.hal6{
+    background: #5E50A1;
+    padding-left: 100px;
+    padding-top: 40px;
+    color: white;
+    width: 80vw;
+    height: 20vh;
+    border-radius: 25px 0 25px 0;
+    margin-bottom: 50px;
+}
+.nav12{
+    margin-left: 250px;
+}
+.nav11{
+    margin-left: -1150px;
+}
+.btn2{
+    border-color:#5E50A1 ;
+    border-radius: 5px;
+    /* margin-right: 20px; */
+    width: 70px;
+    height: 40px;
+    /* border: 5px; */
+    margin-left: 900px;
+}
+.btn3{
+    border: none;
+    border-radius: 5px;
+    background-color: #5E50A1;
+    color: white;
+    width: 70px;
+    height: 40px;
+    /* margin-left: 500px; */
+}
+.navC{
+    padding-bottom: 50px;
+}
+.linkC{
+    text-decoration: none;
+    color: black;
+    margin-left: -500px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 780px) {
+.bg{
+    background-color: #f1eded;
+    padding-left: 00px;
+}
+.hal1{
+    margin-top: 0px;
+    /* padding-left: 120px; */
+    padding-right: 100px;
+}
+.gambarLP{
+    margin-top: -450px;
+    margin-left: 40px;
+   width: 70vw;
+   height: 40vh;     
+}
+.gambarL1{
+ 
+   width: 90vw;
+   height: 50vh;     
+}
+.tak2{
+    margin-top: -90px;
+    margin-left: -30px;
+    height: 50px;
+}
+.tak1{
+    margin-top: -150px;
+    margin-left: 0px;
+}
+.foto15{
+    width: 90vw;
+    height: 40vh;
+}
+.tak4{
+    margin-left: -30px;
+    margin-top: -620px;
+}
+.tak5{
+    margin-top: -720px;
+}
+.h{
+    font-size: 20px;
+}
+.btn1{
+    color: #796EAF;
+    border-radius: 5px;
+    border: none;
+    /* padding-top: 30px; */
+    height: 6vh;
+    margin-top:0;
+    margin-left: 00px;
+}
+.hal6{  
+    margin-left: 30px;
+}
+.btn2{
+    border-color:#5E50A1 ;
+    border-radius: 5px;
+    /* margin-right: 20px; */
+    width: 70px;
+    height: 40px;
+    /* border: 5px; */
+    margin-left: 000px;
+}
+}
