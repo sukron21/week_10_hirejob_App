@@ -12,7 +12,7 @@ export async function getStaticProps(context) {
     const { id } = context.params;
     const response = await axios({
       method: "GET",
-      url: `http://localhost:3001/perusahaan/${id}`,
+      url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`,
     });
     return {
       props: {
@@ -34,7 +34,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   const response = await axios({
     method: "GET",
-    url: `http://localhost:3001/perusahaan`,
+    url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan`,
   });
   // console.log(response.data)
 
@@ -91,12 +91,6 @@ const Detail = (props) => {
                         Some quick example text to build on the card title and
                         make up the bulk of the cards content.
                       </p>
-                      <Link
-                        href="/editprofileperusahaan"
-                        className={style.link1}
-                      >
-                        <button className={style.btn1}>Edit Profile</button>
-                      </Link>
                       <div className={style.sosmed}>
                   <div className="d-flex flex-row justify-content-center">
                     <Image src="/mail.png" className={style.map} height={50} width={100} alt='' />

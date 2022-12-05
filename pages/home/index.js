@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
 import axios from 'axios'
 import Link from 'next/link'
-import Navbar from "../../component/navbar"
+import NavbarPer from "../../component/navbarPer"
 import Footer from "../../component/footer"
 import Image from 'next/image'
 
@@ -29,7 +29,7 @@ const Home = () => {
           alert("Data Tidak ada");
         } else {
           // router.push("#");
-          setData2(response.data.rows)
+          setData2(response.data)
           console.log(response.data);
         }
       })
@@ -73,7 +73,7 @@ const getData = (sort, asc, limit, page) => {
     page ? `&page=${page}` : ""
   }`)
     .then((response) => {
-      console.log(response.data.rows)
+      console.log(response.data)
       setData(response.data.rows)
     })
     .catch((error) => {
@@ -119,10 +119,11 @@ const PreviousPage = () => {
 // }
   return (
     <>
-    {/* {JSON.stringify(data2)} */}
+    
     <section className="topjobs">
         <div className="container-fluid">
-        <Navbar/>
+        <NavbarPer/>
+        {/* {JSON.stringify(data)}aaaa */}
           <div className="row">
             <div className={`p-5 ${styles.top}`}>
               <p className={styles.title}> Top Jobs </p>
@@ -165,6 +166,9 @@ const PreviousPage = () => {
           </div>
           <div className="row">
           {
+            data2.length === 0? (
+              <div> Loading .... </div>
+            ) : 
           data2.length === 0 ?
            data.map((item, index) => (
             <div key={index}>

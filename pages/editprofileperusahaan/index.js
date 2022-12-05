@@ -3,7 +3,7 @@ import react, { useEffect, useState } from "react";
 import style from "../../styles/profile.module.css";
 import axios from "axios";
 import { useRouter } from "next/router";
-import Navbar from "../../component/navbar";
+import NavbarPer from "../../component/navbarPer"
 import Footer from "../../component/footer";
 import Image from 'next/image'
 
@@ -27,7 +27,7 @@ const Profile = () => {
     const id = data.id;
     console.log(id);
     axios
-      .get(`http://localhost:3001/perusahaan/${id}`)
+      .get(`https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`)
       .then((response) => {
         setData(response.data.data.rows);
         console.log(response.data);
@@ -51,7 +51,7 @@ const Profile = () => {
       linkedin: update.linkedin,
     };
     axios
-      .put(`http://localhost:3001/perusahaan/${id}`, form)
+      .put(`https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`, form)
       .then((res) => {
         console.log(res);
         alert("Update Success");
@@ -66,7 +66,7 @@ const Profile = () => {
     const data = JSON.parse(localStorage.getItem("data"));
     const id = data.id;
     axios
-      .delete(`http://localhost:3001/perusahaan/${id}`)
+      .delete(`https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`)
       .then((res) => {
         console.log(res);
         alert("Delete Success");
@@ -81,14 +81,17 @@ const Profile = () => {
     <>
       {/* {JSON.stringify(data1)} */}
       <div className="container-fluid">
-        <Navbar />
+        <NavbarPer  />
         <div className="row">
           <div className={`ps-5  ${style.bg}`}></div>
           <div className="col-md-5">
             <div className={`card ${style.bg1}`}>
               <Image height={150} width={100} src="/luis.png" className={style.pp} alt='' />
               <div class="card-body">
-                {data1.map((item, index) => (
+                {data1.length===0?(
+                  <div>IsLoading...</div>
+                ):
+                data1.map((item, index) => (
                   <div key={index}>
                     <h4 class="card-title">{item.nama_perusahaan}</h4>
 
@@ -118,7 +121,10 @@ const Profile = () => {
                 </div>
                 <div class="card-body">
                   <form onSubmit={(e) => handlePost(e)}>
-                    {data1.map((item, index) => (
+                    {data1.length===0?(
+                      <div>isLoading...</div>
+                    ):
+                    data1.map((item, index) => (
                       <div key={index}>
                         <label htmlFor="inputname" className="">
                           Nama Perusahan

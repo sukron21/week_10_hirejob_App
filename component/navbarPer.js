@@ -19,7 +19,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
-          <Link className="navbar-brand" href="/landingpageUser">
+          <Link className="navbar-brand" href="/landingpageLoginPer">
             <Image src="/book.png" height={30} width={100} alt='' />
           </Link>
           <button
@@ -61,7 +61,7 @@ const Navbar = () => {
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li>
-                    <Link class="dropdown-item" href="/profile">
+                    <Link class="dropdown-item" href="/profileperusahaan">
                       Profile
                     </Link>
                   </li>

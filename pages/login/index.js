@@ -26,7 +26,7 @@ const klik = (e)=>{
         localStorage.setItem("token", response.data.token.token);
         localStorage.setItem("data",JSON.stringify(response.data.token.data));
         alert("Berhasil Masuk")
-        router.push('/landingpageLogin')}
+        router.push('/landingpageUser')}
 
     })
     .catch((err)=>{

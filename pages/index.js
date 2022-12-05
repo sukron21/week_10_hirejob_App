@@ -32,14 +32,14 @@ const landingPage = () => {
 
                 {/* <form className="d-flex"> */}
                   <div className={Styles.nav12}>
-                <Link className="" href="/login">
+                <Link className="" href="/konfirmasi">
                   <button className={Styles.btn2} type="submit">
                     Masuk
                   </button>
                   </Link>
                   </div>
-                  <div className={Styles.nav11}>
-                  <Link className="" href="/register">
+                  <div className="{Styles.nav11}">
+                  <Link className={Styles.nav11} href="/konfirmasi">
                   <button className={Styles.btn3} type="submit">
                     Daftar
                   </button></Link>

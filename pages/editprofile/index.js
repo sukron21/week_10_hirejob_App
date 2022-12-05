@@ -24,7 +24,7 @@ const Profile = () => {
     const id = data.id;
     console.log(id);
     axios
-      .get(`http://localhost:3001/user/${id}`)
+      .get(`https://dark-rose-chinchilla-cap.cyclic.app/user/${id}`)
       .then((response) => {
         setData(response.data.data.rows);
         console.log(response.data.data.rows);
@@ -46,7 +46,7 @@ const Profile = () => {
         
     }
     axios
-        .put(`http://localhost:3001/user/${id}`, form)
+        .put(`https://dark-rose-chinchilla-cap.cyclic.app/user/${id}`, form)
         .then((res) => {
             console.log(res);
             alert("Update Success");
@@ -61,7 +61,7 @@ const deleteRow = () => {
   const data = JSON.parse(localStorage.getItem("data"));
   const id = data.id;
   axios
-    .delete(`http://localhost:3001/user/${id}`)
+    .delete(`https://dark-rose-chinchilla-cap.cyclic.app/user/${id}`)
     .then((res) => {
       console.log(res);
       alert("Delete Success");

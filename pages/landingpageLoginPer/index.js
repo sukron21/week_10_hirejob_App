@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "../../styles/landing.module.css";
 import Link from "next/link";
 import Footer from "../../component/footer"
-import Navbar from "../../component/navbar"
+import NavbarPer from "../../component/navbarPer"
 import Image from 'next/image'
 
 const landingPage = () => {
@@ -10,7 +10,7 @@ const landingPage = () => {
     <>
       <div className="container-fluid">
         <section className={Styles.bg}>
-          <Navbar />
+          <NavbarPer />
           <div className="container">
           <div className="row">
             <div className="col-md-6">

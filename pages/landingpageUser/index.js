@@ -2,6 +2,7 @@ import React from "react";
 import Styles from "../../styles/landing.module.css";
 import Link from "next/link";
 import Footer from "../../component/footer"
+import Navbar from "../../component/navbar"
 import Image from 'next/image'
 
 const landingPage = () => {
@@ -9,46 +10,8 @@ const landingPage = () => {
     <>
       <div className="container-fluid">
         <section className={Styles.bg}>
-          <div className={Styles.navC}>
-          <nav className="navbar navbar-expand-lg ">
-            <div className="container-fluid">
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <Image
-                src="/book.png"
-                width={120}
-                height={40}
-                className={Styles.photoNav}
-                alt=''/>
-
-                {/* <form className="d-flex"> */}
-                  <div className="">
-                <Link className="" href="/konfirmasi">
-                  <button className={Styles.btn2} type="submit">
-                    Masuk
-                  </button>
-                  </Link>
-                  </div>
-                  <div className="">
-                  <Link className="" href="/konfirmasi">
-                  <button className={Styles.btn3} type="submit">
-                    Daftar
-                  </button></Link>
-                  </div>
-                {/* </form> */}
-
-            </div>
-          </nav>
-          </div>
+          <Navbar />
+          <div className="container">
           <div className="row">
             <div className="col-md-6">
               <div className={Styles.hal1}>
@@ -59,9 +22,10 @@ const landingPage = () => {
                   Lorem Ipsum dolor sit amet, consector adipiscing elit. In
                   Euismod ipsum et dui rhoncus auctor
                 </p>
-                <button type="submit" className={Styles.btnLP}>
+                <Link className="nav-link" href="homeuser"><button type="submit" className={Styles.btnLP}>
                   Mulai dari sekarang
-                </button>
+                </button></Link>
+                
               </div>
             </div>
             <div className="col-md-6">
@@ -251,6 +215,7 @@ const landingPage = () => {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </section>
         <Footer/>

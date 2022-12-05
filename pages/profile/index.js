@@ -28,8 +28,8 @@ const profile = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the cards content.
                 </p>
-                <Link href="#" className={style.link1}>
-                  <button className={style.btn1}>Go somewhere</button>
+                <Link href="/editprofile" className={style.link1}>
+                  <button className={style.btn1}>Edit Profile</button>
                 </Link>
                 <h4>Skill</h4>
                 <div className="d-flex flex-row">
