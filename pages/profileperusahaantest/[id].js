@@ -70,7 +70,7 @@ export async function getStaticPaths() {
     url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan`,
   });
   console.log("data ssg",response.data.rows)
-  const data =response.data.rows
+  const data =response.data.data.rows
   const paths = data.map((item) => {
     return { params: { id: item.id.toString() } };
   });
