@@ -7,38 +7,71 @@ import Navbar from "../../component/navbar";
 import Footer from "../../component/footer";
 import Image from 'next/image'
 
+// export async function getStaticProps(context) {
+//   try {
+//     const { id } = context.params;
+//     const response = await fetch({
+//       method: "GET",
+//       url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`,
+//     });
+//     return {
+//       props: {
+//         data: response.data,
+//       },
+//       revalidate: 60,
+//       notFound: false,
+//     };
+//   } catch (error) {
+//     return {
+//       props: {
+//         data: null,
+//       },
+//       revalidate: 60, // 60 second
+//       notFound: true,
+//     };
+//   }
+// }
 export async function getStaticProps(context) {
   try {
-    const { id } = context.params;
-    const response = await axios({
-      method: "GET",
-      url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`,
-    });
+    const {id} = context.params;
+    console.log(id)
+    // const response = await axios({
+    //     method: 'GET',
+    //     url: `${process.env.NEXT_PUBLIC_API_URL}/recruiter/list/${id}`,
+    // })
+    const resultList = await fetch(
+      `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`,
+      {
+        method: "GET",
+      }
+    )
+    const data = await resultList.json();
     return {
-      props: {
-        data: response.data,
-      },
-      revalidate: 60,
-      notFound: false,
-    };
-  } catch (error) {
+        props: {
+            data: data.data
+        },
+        revalidate: 1,
+        notFound: false
+    }
+  } 
+  catch (err) {
     return {
-      props: {
-        data: null,
-      },
-      revalidate: 60, // 60 second
-      notFound: true,
-    };
+        props: {
+            data: null
+        },
+        revalidate: 1,
+        notFound: true
+    }
   }
 }
 export async function getStaticPaths() {
   const response = await axios({
     method: "GET",
     url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan`,
-  });
-  // console.log(response.data)
-
-  const paths = response.data.data.rows.map((item) => {
+  });s
+  console.log("data ssg",response.data.rows)
+  const data =response.data.rows
+  const paths = data.map((item) => {
     return { params: { id: item.id.toString() } };
   });
   // console.log(paths);
@@ -49,7 +82,7 @@ export async function getStaticPaths() {
 }
 
 const Detail = (props) => {
-  const data = props.data.data.rows
+  const data = props.data.rows
   console.log(data)
   // const router = useRouter();
   // const [data, setData] = useState([]);
@@ -70,10 +103,10 @@ const Detail = (props) => {
 
   return (
     <>
-      {/* {JSON.stringify(props.data.data.rows)} */}
+      {/* {JSON.stringify(props.data.rows)} */}
       <div className="container-fluid">
         <Navbar />
-        {data.map((item, index) => (
+        {props.data.rows.map((item, index) => (
           <div key={index}>
             <div className={` ${style.all}`}>
               <div className="container">
