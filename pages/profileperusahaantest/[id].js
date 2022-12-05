@@ -68,7 +68,7 @@ export async function getStaticPaths() {
   const response = await axios({
     method: "GET",
     url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan`,
-  });s
+  });
   console.log("data ssg",response.data.rows)
   const data =response.data.rows
   const paths = data.map((item) => {
