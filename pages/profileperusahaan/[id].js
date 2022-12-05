@@ -23,7 +23,7 @@ const Detail = () => {
         console.error(error);
         router.push("/login");
       });
-  }, []);
+  }, [id, router]);
   // const deleteRow = () => {
   //   const data = JSON.parse(localStorage.getItem("data"));
   //   const id = data.id;

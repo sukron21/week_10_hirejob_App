@@ -41,14 +41,16 @@ export async function getStaticPaths() {
   const paths = response.data.data.rows.map((item) => {
     return { params: { id: item.id.toString() } };
   });
-  console.log(paths);
+  // console.log(paths);
   return {
     paths,
-    fallback: "blocking", // can also be true or 'blocking'
+    fallback: false, // can also be true or 'blocking'
   };
 }
 
 const Detail = (props) => {
+  const data = props.data.data.rows
+  console.log(data)
   // const router = useRouter();
   // const [data, setData] = useState([]);
   // const { id } = router.query;
@@ -71,7 +73,7 @@ const Detail = (props) => {
       {/* {JSON.stringify(props.data.data.rows)} */}
       <div className="container-fluid">
         <Navbar />
-        {props.data.data.rows.map((item, index) => (
+        {data.map((item, index) => (
           <div key={index}>
             <div className={` ${style.all}`}>
               <div className="container">
