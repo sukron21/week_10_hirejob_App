@@ -8,7 +8,7 @@ import Footer from "../../component/footer";
 import Image from 'next/image'
 
 // export async function getStaticProps(context) {
-//   try {
+//   try {  
 //     const { id } = context.params;
 //     const response = await fetch({
 //       method: "GET",
@@ -115,8 +115,8 @@ const Detail = (props) => {
                     <div className={` ${style.bg3}`}></div>
                     <Image src="/luis.png" className={style.pp1} height={150} width={100} alt='' />
                     <div className="card-body">
-                      <h4 className="card-title">{item.nama_perusahaan}</h4>
-                      
+                      {/* <h4 className="card-title">{item.nama_perusahaan}</h4> */}
+                      <h4 className="card-title">PT maju jaya</h4>
                       <div className="d-flex flex-row justify-content-center">
                       <Image src="/map.png" className={style.map} height={50} width={100} alt='' />
                         <p className={style.abu2}>Purwokerto, jawa tengah</p>
