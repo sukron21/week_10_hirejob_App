@@ -22,7 +22,7 @@
 .pp{
     width: 150px;
     text-align: center;
-    
+    margin-top: 20px;
 }
 .pp1{
     width: 150px;
@@ -62,7 +62,8 @@
 }
 .abu2{
     color: #9EA0A5;
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    padding-right: 20px;
 }
 .bg{
     background-color: #5E50A1;

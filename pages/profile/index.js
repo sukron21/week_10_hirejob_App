@@ -152,7 +152,7 @@ const profile = () => {
                             src="/tokped.png"
                             className=""
                             alt="..."
-                            height={50} width={100}
+                            height={100} width={100}
                           />
                         </div>
                         </div>
@@ -178,7 +178,7 @@ const profile = () => {
                             src="/tokped.png"
                             className=""
                             alt="..."
-                            height={50} width={100}
+                            height={100} width={100}
                           />
                         </div>
                         </div>

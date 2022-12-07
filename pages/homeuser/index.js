@@ -10,7 +10,7 @@ import Image from 'next/image'
 export async function getStaticProps(context) {
   const response = await axios({
       method: "GET",
-      url: 'https://dark-rose-chinchilla-cap.cyclic.app/perusahaan'
+      url: 'http://localhost:3002/perusahaan'
   })
   return {
       props: {
@@ -23,8 +23,8 @@ export async function getStaticProps(context) {
 }
 
 const Home = (props) => {
-  const router = useRouter();
-  const [data, setData] = useState([]);
+  // const router = useRouter();
+  // const [data, setData] = useState([]);
 
   // useEffect(() => {
   //   axios

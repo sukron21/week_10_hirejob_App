@@ -123,7 +123,7 @@ const PreviousPage = () => {
     <section className="topjobs">
         <div className="container-fluid">
         <NavbarPer/>
-        {/* {JSON.stringify(data)}aaaa */}
+        {JSON.stringify(data2)}aaaa
           <div className="row">
             <div className={`p-5 ${styles.top}`}>
               <p className={styles.title}> Top Jobs </p>
@@ -166,9 +166,7 @@ const PreviousPage = () => {
           </div>
           <div className="row">
           {
-            data2.length === 0? (
-              <div> Loading .... </div>
-            ) : 
+            
           data2.length === 0 ?
            data.map((item, index) => (
             <div key={index}>

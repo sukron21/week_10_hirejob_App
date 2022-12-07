@@ -34,13 +34,13 @@ import Image from 'next/image'
 export async function getStaticProps(context) {
   try {
     const {id} = context.params;
-    console.log(id)
+    // console.log(id)
     // const response = await axios({
     //     method: 'GET',
     //     url: `${process.env.NEXT_PUBLIC_API_URL}/recruiter/list/${id}`,
     // })
     const resultList = await fetch(
-      `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`,
+      `http://localhost:3002/perusahaan/${id}`,
       {
         method: "GET",
       }
@@ -67,10 +67,11 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   const response = await axios({
     method: "GET",
-    url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan`,
+    url: `http://localhost:3002/perusahaan`,
   });
-  console.log("data ssg",response.data.data.rows)
+  // console.log("data ssg",response.data.data.rows)
   const data =response.data.data.rows
+  console.log(data)
   const paths = data.map((item) => {
     return { params: { id: item.id.toString() } };
   });
@@ -82,28 +83,10 @@ export async function getStaticPaths() {
 }
 
 const Detail = (props) => {
-  const data = props.data.rows
-  console.log(data)
-  // const router = useRouter();
-  // const [data, setData] = useState([]);
-  // const { id } = router.query;
-
-  // useEffect(() => {
-  //   axios
-  //     .get(`http://localhost:3001/user/${id}`)
-  //     .then((response) => {
-  //       setData(response.data.data.rows);
-  //       console.log(response.data.data.rows);
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //       router.push("/login");
-  //     });
-  // }, []);
+ 
 
   return (
     <>
-      {/* {JSON.stringify(props.data.rows)} */}
       <div className="container-fluid">
         <Navbar />
         {props.data.rows.map((item, index) => (
@@ -115,8 +98,8 @@ const Detail = (props) => {
                     <div className={` ${style.bg3}`}></div>
                     <Image src="/luis.png" className={style.pp1} height={150} width={100} alt='' />
                     <div className="card-body">
-                      {/* <h4 className="card-title">{item.nama_perusahaan}</h4> */}
-                      <h4 className="card-title">PT maju jaya</h4>
+                      <h4 className="card-title">{item.nama_perusahaan}</h4>
+                      {/* <h4 className="card-title">PT maju jaya</h4> */}
                       <div className="d-flex flex-row justify-content-center">
                       <Image src="/map.png" className={style.map} height={50} width={100} alt='' />
                         <p className={style.abu2}>Purwokerto, jawa tengah</p>
