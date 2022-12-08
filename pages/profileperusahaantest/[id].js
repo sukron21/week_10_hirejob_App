@@ -40,7 +40,7 @@ export async function getStaticProps(context) {
     //     url: `${process.env.NEXT_PUBLIC_API_URL}/recruiter/list/${id}`,
     // })
     const resultList = await fetch(
-      `http://localhost:3002/perusahaan/${id}`,
+      `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`,
       {
         method: "GET",
       }
@@ -67,7 +67,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   const response = await axios({
     method: "GET",
-    url: `http://localhost:3002/perusahaan`,
+    url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan`,
   });
   // console.log("data ssg",response.data.data.rows)
   const data =response.data.data.rows

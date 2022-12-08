@@ -31,7 +31,7 @@ const onSubmitHandler = (e) => {
         alert("Password tidak sama")
       }
         else{
-      axios.post('http://localhost:3002/register', body)
+      axios.post('https://dark-rose-chinchilla-cap.cyclic.app/register', body)
       .then((res) => {
           console.log(res.data);
           alert("Register Succes");

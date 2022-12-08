@@ -14,7 +14,7 @@ const Detail = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3002/user/${id}`)
+      .get(`https://dark-rose-chinchilla-cap.cyclic.app/user/${id}`)
       .then((response) => {
         setData(response.data.data.rows);
         console.log(response.data.data.rows);

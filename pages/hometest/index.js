@@ -12,7 +12,7 @@ export async function getServerSideProps(context) {
 
     const response = await axios({
       method: 'GET',
-      url: 'http://localhost:3002/'
+      url: 'https://dark-rose-chinchilla-cap.cyclic.app/'
     })
     console.log(response.data)
     return {

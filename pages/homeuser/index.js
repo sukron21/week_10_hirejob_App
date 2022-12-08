@@ -10,7 +10,7 @@ import Image from 'next/image'
 export async function getStaticProps(context) {
   const response = await axios({
       method: "GET",
-      url: 'http://localhost:3002/perusahaan'
+      url: 'https://dark-rose-chinchilla-cap.cyclic.app/perusahaan'
   })
   return {
       props: {
