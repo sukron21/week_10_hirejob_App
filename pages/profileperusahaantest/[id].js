@@ -12,7 +12,7 @@ import Image from 'next/image'
 //     const { id } = context.params;
 //     const response = await fetch({
 //       method: "GET",
-//       url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`,
+//       url: `http://localhost:3002/perusahaan/${id}`,
 //     });
 //     return {
 //       props: {
@@ -40,7 +40,7 @@ export async function getStaticProps(context) {
     //     url: `${process.env.NEXT_PUBLIC_API_URL}/recruiter/list/${id}`,
     // })
     const resultList = await fetch(
-      `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`,
+      `http://localhost:3002/perusahaan/${id}`,
       {
         method: "GET",
       }
@@ -67,7 +67,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   const response = await axios({
     method: "GET",
-    url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan`,
+    url: `http://localhost:3002/perusahaan`,
   });
   // console.log("data ssg",response.data.data.rows)
   const data =response.data.data.rows

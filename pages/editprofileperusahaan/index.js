@@ -27,7 +27,7 @@ const Profile = () => {
     const id = data.id;
     console.log(id);
     axios
-      .get(`https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`)
+      .get(`http://localhost:3002/perusahaan/${id}`)
       .then((response) => {
         setData(response.data.data.rows);
         console.log(response.data);
@@ -51,7 +51,7 @@ const Profile = () => {
       linkedin: update.linkedin,
     };
     axios
-      .put(`https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`, form)
+      .put(`http://localhost:3002/perusahaan/${id}`, form)
       .then((res) => {
         console.log(res);
         alert("Update Success");
@@ -66,7 +66,7 @@ const Profile = () => {
     const data = JSON.parse(localStorage.getItem("data"));
     const id = data.id;
     axios
-      .delete(`https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`)
+      .delete(`http://localhost:3002/perusahaan/${id}`)
       .then((res) => {
         console.log(res);
         alert("Delete Success");
