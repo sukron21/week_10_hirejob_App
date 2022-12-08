@@ -10,7 +10,7 @@ import Image from 'next/image'
 export async function getStaticProps(context) {
   const response = await axios({
       method: "GET",
-      url: 'http://localhost:3002/perusahaan'
+      url: 'https://dark-rose-chinchilla-cap.cyclic.app/perusahaan'
   })
   return {
       props: {
@@ -168,7 +168,7 @@ const Home = (props) => {
                         </div>
                       </div>
                       <div className="col-md-5 d-flex flex-row align-items-center justify-content-end">
-                        <Link href={`/profileperusahaantest/${item.id}`}>
+                        <Link href={`/profileperusahaan/${item.id}`}>
                           <button className={`  px-4 ${styles.toProfile}`}>
                             {" "}
                             Lihat Profile

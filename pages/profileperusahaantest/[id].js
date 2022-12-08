@@ -12,7 +12,7 @@ import Image from 'next/image'
 //     const { id } = context.params;
 //     const response = await fetch({
 //       method: "GET",
-//       url: `http://localhost:3002/perusahaan/${id}`,
+//       url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`,
 //     });
 //     return {
 //       props: {
@@ -31,55 +31,55 @@ import Image from 'next/image'
 //     };
 //   }
 // }
-export async function getStaticProps(context) {
-  try {
-    const {id} = context.params;
-    // console.log(id)
-    // const response = await axios({
-    //     method: 'GET',
-    //     url: `${process.env.NEXT_PUBLIC_API_URL}/recruiter/list/${id}`,
-    // })
-    const resultList = await fetch(
-      `http://localhost:3002/perusahaan/${id}`,
-      {
-        method: "GET",
-      }
-    )
-    const data = await resultList.json();
-    return {
-        props: {
-            data: data.data
-        },
-        revalidate: 1,
-        notFound: false
-    }
-  } 
-  catch (err) {
-    return {
-        props: {
-            data: null
-        },
-        revalidate: 1,
-        notFound: true
-    }
-  }
-}
-export async function getStaticPaths() {
-  const response = await axios({
-    method: "GET",
-    url: `http://localhost:3002/perusahaan/`,
-  });
-  const data =response.data.data.rows
-  console.log(data)
-  const paths = data.map((item) => {
-    return { params: { id: item.id.toString() } };
-  });
-  // console.log(paths);
-  return {
-    paths,
-    fallback: "blocking", // can also be true or 'blocking'
-  };
-}
+// export async function getStaticProps(context) {
+//   try {
+//     const {id} = context.params;
+//     // console.log(id)
+//     // const response = await axios({
+//     //     method: 'GET',
+//     //     url: `${process.env.NEXT_PUBLIC_API_URL}/recruiter/list/${id}`,
+//     // })
+//     const resultList = await fetch(
+//       `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/${id}`,
+//       {
+//         method: "GET",
+//       }
+//     )
+//     const data = await resultList.json();
+//     return {
+//         props: {
+//             data: data.data
+//         },
+//         revalidate: 1,
+//         notFound: false
+//     }
+//   } 
+//   catch (err) {
+//     return {
+//         props: {
+//             data: null
+//         },
+//         revalidate: 1,
+//         notFound: true
+//     }
+//   }
+// }
+// export async function getStaticPaths() {
+//   const response = await axios({
+//     method: "GET",
+//     url: `https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/`,
+//   });
+//   const data =response.data.data.rows
+//   console.log(data)
+//   const paths = data.map((item) => {
+//     return { params: { id: item.id.toString() } };
+//   });
+//   // console.log(paths);
+//   return {
+//     paths,
+//     fallback: "blocking", // can also be true or 'blocking'
+//   };
+// }
 
 const Detail = (props) => {
  
