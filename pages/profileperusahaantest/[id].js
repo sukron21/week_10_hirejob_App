@@ -69,7 +69,6 @@ export async function getStaticPaths() {
     method: "GET",
     url: `http://localhost:3002/perusahaan/`,
   });
-  // console.log("data ssg",response.data.data.rows)
   const data =response.data.data.rows
   console.log(data)
   const paths = data.map((item) => {
