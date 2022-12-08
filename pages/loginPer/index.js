@@ -18,7 +18,7 @@ const klik = (e)=>{
     axios.post('https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/login',form)
     .then((response)=>{
         // console.log(response.data.token.data)
-        // console.log(data)
+        console.log(data)
         if(response.data.status !== 'success'){
           alert (response.data.message)
         }else{
