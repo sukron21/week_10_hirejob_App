@@ -13,7 +13,7 @@ const LoginPer = () => {
 
 const klik = (e)=>{
   if (e && e.preventDefault) { e.preventDefault(); }
-    // console.log(form)
+    console.log(form)
 
     axios.post('https://dark-rose-chinchilla-cap.cyclic.app/perusahaan/login',form)
     .then((response)=>{
