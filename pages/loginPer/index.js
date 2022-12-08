@@ -17,7 +17,7 @@ const klik = (e)=>{
 
     axios.post('http://localhost:3002/perusahaan/login',form)
     .then((response)=>{
-        // console.log(response.data.token.data)
+        console.log(response.data.token.data)
         console.log(response.data)
         if(response.data.status !== 'success'){
           alert (response.data.message)
