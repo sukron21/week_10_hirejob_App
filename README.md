@@ -21,6 +21,17 @@ This app was built with some technologies below:
 - [Next](https://nextjs.org/)
 - [react-dom](https://reactjs.org/docs/react-dom.html)
 
+### Structure Folder 
+
+<p id='structure-folder'>Frontend</p>
+<ul>
+  <li>public || <span><b><i>You can drop anything if that is accesseble for public</i></b></span></li>
+  <li>componets || <span><b><i>Components have been used to modify content and, like content cards, buttons, etc, can be reused.</i></b></span></li>
+  <li>layouts || <span>Layouts, like components, are used throughout the page, such as the navbar or footer.</span></li>
+  <li>pages || <span><b><i>This folder is used to hold all the pages on our website.</i></b></span></li>
+  <li>styles || <span><b><i>This folder contains CSS styles for beautifying website pages.</i></b></span></li>
+</ul>
+
 ## Screenshoots
 
 <details>
@@ -75,6 +86,8 @@ This app was built with some technologies below:
 
 RESTful API for this web application, clone this for development HireJobs.\
 - [backend-HireJobs](https://github.com/sukron21/Hirejob_API)
+- [Frontend-HireJobs](https://github.com/sukron21/week_10_hirejob_App)
+- [backend-HireJobs](week-10-hirejob-app-ermn.vercel.app)
 
 
 ## Contributing
@@ -92,3 +105,13 @@ Contributions are what make the open source community such an amazing place to b
 Install package : npm i
 
 Run Project : npm start
+
+## Authors
+
+Contributors names and contact info:
+
+1. Rahmat Furqon
+
+- [Repository Backend](https://github.com/sukron21/FIX_BE_MamaRecipe)
+
+- [Linkedin](www.linkedin.com/in/furqon-rahmat)
