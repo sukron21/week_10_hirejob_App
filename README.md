@@ -23,15 +23,22 @@ This app was built with some technologies below:
 
 ## Screenshoots
 
-<img src="/screenshoots/loginoptional.png" alt="Login Optional Page" />
-</details>
-
 <details>
   <summary>
-    Login & Register
+    Optional
   </summary>
-
+<img src="/screenshoots/loginoptional.png" alt="Login Optional Page" />
+</details>
+<details>
+  <summary>
+    Login
+  </summary>
 <img src="/screenshoots/login.png" alt="Login Page" />
+</details>
+<details>
+  <summary>
+   Register
+  </summary>
 <img src="/screenshoots/register.png" alt="Register Page" />
 </details>
 
