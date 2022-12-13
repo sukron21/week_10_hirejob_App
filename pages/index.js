@@ -127,20 +127,20 @@ const landingPage = () => {
                   <h2>Skill tallent</h2>
                   <div className={Styles.foto4}>
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
-                    <Image height={20} width={30} className={Styles.foto6} src="/public/tick 13.png"alt='' /> Golang
+                    <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png"alt='' /> Golang
                   </div>
                   <div className={Styles.foto4}>
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
-                    <Image height={20} width={30} className={Styles.foto7} src="/public/tick 13.png" alt='' /> c++
+                    <Image height={20} width={30} className={Styles.foto7} src="/tick 13.png" alt='' /> c++
                   </div>
                   <div className={Styles.foto4}>
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> PHP
-                    <Image height={20} width={30} className={Styles.foto6} src="/public/tick 13.png" alt=''/> Ruby
+                    <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png" alt=''/> Ruby
                   </div>
                   <div className={Styles.foto4}>
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' />{" "}
                     Javascript
-                    <Image height={20} width={30}    className={Styles.foto8} src="/public/tick 13.png" alt='' /> 10+
+                    <Image height={20} width={30}    className={Styles.foto8} src="/tick 13.png" alt='' /> 10+
                     Bahasa lainnya
                   </div>
                 </div>
