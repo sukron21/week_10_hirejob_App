@@ -22,15 +22,25 @@ This app was built with some technologies below:
 - [react-dom](https://reactjs.org/docs/react-dom.html)
 
 ## Screenshoots
+
 <details>
   <summary>
-    Login & Register
+    Optional User
   </summary>
 <img src="/screenshoots/loginoptional.png" alt="Login Optional Page" />
-<img src="/screenshoots/login.png" alt="Login Page" />
-<img src="/screenshoots/register.png" alt="Register Page" />
 </details>
 
+<details>
+  <summary>
+    Login
+  </summary>
+<img src="/screenshoots/login.png" alt="Login Page" />
+</details>
+<details>
+  <summary>
+    Register
+  </summary>
+<img src="/screenshoots/register.png" alt="Register Page" />
 <details>
   <summary>
     Landing Page
