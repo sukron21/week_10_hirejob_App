@@ -1,13 +1,5 @@
 <h1>HireJobs (FE)</h1>
 
-## Table of contents
-- [Description](#Description)
-- [Built With](#built-with)
-- [Screenshoots](#screenshoots)
-- [Related Project](#related-project)
-- [Contributing](#contributing)
-- [Run Project](#run-project)
-
 ## Description
 
 HireJobs is a job search application, in this application users can log in as recruitment teams and job hunters. As a recruitment team, they will display a list of job hunters and CRUD on their profile page. As a job hunter, you will display your portfolio and work experience and CRUD on your profile. This application was created/developed using Postgresql and Next.js.
