@@ -47,7 +47,7 @@ This app was built with some technologies below:
 
 <details>
   <summary>
-   Profile Pekerja Page
+   Profile Worker Page
   </summary>
 <img src="/screenshoots/profile.png" alt="Profile" />
 <img src="/screenshoots/updateprofile.png" alt="Update Profile" />
@@ -55,7 +55,7 @@ This app was built with some technologies below:
 
 <details>
   <summary>
-    Profile Prekrut Page
+    Profile Recruiter Page
   </summary>
 <img src="/screenshoots/profileprekrut.png" alt="Profile" />
 <img src="/screenshoots/updateprekrut.png" alt="Update Profile" />
