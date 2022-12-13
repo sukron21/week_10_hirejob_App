@@ -69,7 +69,6 @@ This app was built with some technologies below:
   <summary>
     Profile Recruiter Page
   </summary>
-<img src="/screenshoots/profileprekrut.png" alt="Profile" />
 <img src="/screenshoots/updateprekrut.png" alt="Update Profile" />
 </details>
 
