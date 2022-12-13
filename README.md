@@ -18,7 +18,8 @@ This app was built with some technologies below:
 - [React.js](https://reactjs.org/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Axios](https://axios-http.com/)
-- [Postgresql](https://www.postgresql.org/)
+- [Next](https://nextjs.org/)
+- [react-dom](https://reactjs.org/docs/react-dom.html)
 
 ## Screenshoots
 <details>
