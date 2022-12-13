@@ -163,47 +163,6 @@ const landingPage = () => {
                   alt=''/>
               </div>
             </div>
-            {/* <div className={Styles.hal5}>
-              <h2 className={Styles.ha2}>Their Opinion about peworld</h2>
-              <div className="row">
-              {/* <div className="col-md-3">
-              <Image src="/kotak1.png" width={480} height={500} />
-              </div> */}
-            {/* <div className="col-md-3">
-              <div className={Styles.bagi}>
-              <div className="bag1">
-              <Image src="/ellipse 321.png"  />
-              <Image className={Styles.pp} src="/ellipse 320.png"  />
-              </div>
-              <h5>Harry Styles</h5>
-              <p>Web Developer</p>
-              <p>Lorem Ipsum dolor sit amet, consector adipiscing elit. In Euismod ipsum et dui rhoncus auctor</p>
-              </div>
-              </div>
-              <div className="col-md-3">
-              <div className={Styles.bagi}>
-              <div className="bag1">
-              <Image src="/ellipse 321.png"  />
-              <Image className={Styles.pp} src="/ellipse 320.png"  />
-              </div>
-              <h5>Harry Styles</h5>
-              <p>Web Developer</p>
-              <p>Lorem Ipsum dolor sit amet, consector adipiscing elit. In Euismod ipsum et dui rhoncus auctor</p>
-              </div>
-              </div>
-              <div className="col-md-3">
-              <div className={Styles.bagi}>
-              <div className="bag1">
-              <Image src="/ellipse 321.png"  />
-              <Image className={Styles.pp} src="/ellipse 320.png"  />
-              </div>
-              <h5>Harry Styles</h5>
-              <p>Web Developer</p>
-              <p>Lorem Ipsum dolor sit amet, consector adipiscing elit. In Euismod ipsum et dui rhoncus auctor</p>
-              </div>
-              </div>
-              </div>
-            </div> */}
             <section className={`${Styles.pageFour} mt-5`}>
               <div className="row">
                 <div className="col-md-12 mb-5">
@@ -216,7 +175,7 @@ const landingPage = () => {
                 <div className="col">
                   <div className="card h-10 px-5 py-4 align-items-center">
                     <Image
-                      src="/public/Ellipse 320.png"
+                      src="/Ellipse 320.png"
                       width={120}
                       height={120}
                       className={Styles.photoImage}
@@ -236,7 +195,7 @@ const landingPage = () => {
                 <div className="col">
                   <div className="card h-10 px-5 py-4 align-items-center">
                     <Image
-                      src="/public/Ellipse 320.png"
+                      src="/Ellipse 320.png"
                       width={120}
                       height={120}
                       className={Styles.photoImage}
@@ -256,7 +215,7 @@ const landingPage = () => {
                 <div className="col">
                   <div className="card h-10 px-5 py-4 align-items-center">
                     <Image
-                      src="/public/Ellipse 320.png"
+                      src="/Ellipse 320.png"
                       width={120}
                       height={120}
                       className={Styles.photoImage}
