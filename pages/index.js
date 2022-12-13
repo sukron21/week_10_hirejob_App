@@ -216,7 +216,7 @@ const landingPage = () => {
                 <div className="col">
                   <div className="card h-10 px-5 py-4 align-items-center">
                     <Image
-                      src="/ellipse 320.png"
+                      src="/public/Ellipse 320.png"
                       width={120}
                       height={120}
                       className={Styles.photoImage}
@@ -236,7 +236,7 @@ const landingPage = () => {
                 <div className="col">
                   <div className="card h-10 px-5 py-4 align-items-center">
                     <Image
-                      src="/ellipse 320.png"
+                      src="/public/Ellipse 320.png"
                       width={120}
                       height={120}
                       className={Styles.photoImage}
@@ -256,7 +256,7 @@ const landingPage = () => {
                 <div className="col">
                   <div className="card h-10 px-5 py-4 align-items-center">
                     <Image
-                      src="/ellipse 320.png"
+                      src="/public/Ellipse 320.png"
                       width={120}
                       height={120}
                       className={Styles.photoImage}
