@@ -79,7 +79,6 @@ This app was built with some technologies below:
 RESTful API for this web application, clone this for development HireJobs.\
 - [backend-HireJobs](https://github.com/sukron21/Hirejob_API)
 - [Frontend-HireJobs](https://github.com/sukron21/week_10_hirejob_App)
-- [backend-HireJobs](week-10-hirejob-app-ermn.vercel.app)
 
 
 ## Contributing
