@@ -74,7 +74,7 @@ This app was built with some technologies below:
 ## Related Project
 
 RESTful API for this web application, clone this for development HireJobs.\
-- [backend-HireJobs](https://github.com/vickomaris/HireJob_BE)
+- [backend-HireJobs](https://github.com/sukron21/Hirejob_API)
 
 
 ## Contributing
