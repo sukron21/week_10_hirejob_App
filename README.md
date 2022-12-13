@@ -61,7 +61,6 @@ This app was built with some technologies below:
   <summary>
    Profile Worker Page
   </summary>
-<img src="/screenshoots/profile.png" alt="Profile" />
 <img src="/screenshoots/updateprofile.png" alt="Update Profile" />
 </details>
 
