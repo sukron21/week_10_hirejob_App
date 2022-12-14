@@ -91,24 +91,37 @@ const landingPage = () => {
             </div>
             <div className="col-md-6">
               <div className="row">
-                <div className={Styles.hal3}>
+              <div className={Styles.hal3}>
                   <h2>Skill tallent</h2>
-                  <div className={Styles.foto4}>
-                    <Image className={Styles.foto5} src="/tick 13.png" width={20} height={20} alt='' /> Java
-                   
-                  </div>
-                  <div className={Styles.foto4}>
-                    <Image className={Styles.foto5} src="/tick 13.png" width={20} height={20} alt='' /> Kotlin
-                    
-                  </div>
-                  <div className={Styles.foto4}>
-                    <Image className={Styles.foto5} src="/tick 13.png" width={20} height={20} alt='' /> PHP
-                    
-                  </div>
-                  <div className={Styles.foto4}>
-                    <Image className={Styles.foto5} src="/tick 13.png" width={20} height={20} alt='' />{" "}
-                    Javascript
-
+                  <div className="row">
+                    <div className="col-md-3 flex-d-flex">
+                      <div className={Styles.foto4}>
+                    <Image height={25} width={25} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={25} width={25} className={Styles.foto5} src="/tick 13.png" alt='' /> Golang
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={25} width={25} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={25} width={25} className={Styles.foto5} src="/tick 13.png" alt='' /> PHP
+                    </div>
+                    </div>
+                    <div className="col-md-4 flex-d-flex">
+                    <div className={Styles.foto4}>
+                    <Image height={25} width={25} className={Styles.foto5} src="/tick 13.png" alt='' /> JavaScript
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={25} width={25} className={Styles.foto5} src="/tick 13.png" alt='' /> C++
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={25} width={25} className={Styles.foto5} src="/tick 13.png" alt='' /> Ruby
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={25} width={25} className={Styles.foto5} src="/tick 13.png" alt='' /> 10+Bahasa lainnya
+                    </div>
+                    </div>
                   </div>
                 </div>
               </div>
