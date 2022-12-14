@@ -126,14 +126,15 @@ const landingPage = () => {
                 <div className={Styles.hal3}>
                   <h2>Skill tallent</h2>
                   <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-md-3 flex-d-flex">
+                      <div>
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
                     <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png"alt='' /> Golang
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> PHP
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Javascript
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-3 flex-d-flex">
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
                     <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png"alt='' /> Golang
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
