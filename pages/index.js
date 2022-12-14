@@ -104,19 +104,19 @@ const landingPage = () => {
                 <h2>Kenapa harus mencari tallent</h2>
                 <h2>di peworld</h2>
                 <div className={Styles.foto4}>
-                  <Image height={20} width={30} className={Styles.foto5} src="/tick 1.png" alt=''/> Lorem ipsum
+                  <Image height={30} width={30} className={Styles.foto5} src="/tick 1.png" alt=''/> Lorem ipsum
                   dolor sit amet.<br></br>
                 </div>
                 <div  className={Styles.foto4}>
-                  <Image height={20} width={30} className={Styles.foto5} src="/tick 1.png" alt='' /> Lorem ipsum
+                  <Image height={30} width={30} className={Styles.foto5} src="/tick 1.png" alt='' /> Lorem ipsum
                   dolor sit amet.<br></br>
                 </div>
                 <div className={Styles.foto4}>
-                  <Image height={20} width={30} className={Styles.foto5} src="/tick 1.png" alt=''/> Lorem ipsum
+                  <Image height={30} width={30} className={Styles.foto5} src="/tick 1.png" alt=''/> Lorem ipsum
                   dolor sit amet.<br></br>
                 </div>
                 <div className={Styles.foto4}>
-                  <Image height={20} width={30} className={Styles.foto5} src="/tick 1.png" alt='' /> Lorem ipsum
+                  <Image height={30} width={30} className={Styles.foto5} src="/tick 1.png" alt='' /> Lorem ipsum
                   dolor sit amet.
                 </div>
               </div>
@@ -127,42 +127,34 @@ const landingPage = () => {
                   <h2>Skill tallent</h2>
                   <div className="row">
                     <div className="col-md-3 flex-d-flex">
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
-                    <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png"alt='' /> Golang
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> PHP
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Javascript
+                      <div className={Styles.foto4}>
+                    <Image height={30} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
                     </div>
-                    <div className="col-md-3 flex-d-flex">
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
-                    <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png"alt='' /> Golang
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> PHP
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Javascript
+                    <div className={Styles.foto4}>
+                    <Image height={30} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Golang
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={30} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={30} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> PHP
+                    </div>
+                    </div>
+                    <div className="col-md-4 flex-d-flex">
+                    <div className={Styles.foto4}>
+                    <Image height={30} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> JavaScript
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={30} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> C++
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={30} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Ruby
+                    </div>
+                    <div className={Styles.foto4}>
+                    <Image height={30} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> 10+Bahasa lainnya
+                    </div>
                     </div>
                   </div>
-                  {/* <div className={`row ${Styles.foto4}`}>
-                    <div className="col-md-3">
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
-                    </div>
-                    <div className="col-md-3">
-                    <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png"alt='' /> Golang
-                    </div>
-                  </div> */}
-                  {/* <div className={Styles.foto4}>
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
-                    <Image height={20} width={30} className={Styles.foto7} src="/tick 13.png" alt='' /> c++
-                  </div>
-                  <div className={Styles.foto4}>
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> PHP
-                    <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png" alt=''/> Ruby
-                  </div>
-                  <div className={Styles.foto4}>
-                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' />{" "}
-                    Javascript
-                    <Image height={20} width={30}    className={Styles.foto8} src="/tick 13.png" alt='' /> 10+
-                    Bahasa lainnya
-                  </div> */}
                 </div>
               </div>
             </div>
