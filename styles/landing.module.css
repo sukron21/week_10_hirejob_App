@@ -10,6 +10,11 @@
    height: 500px;     
 }
 .hal1{
+    margin-top: 80px;
+    /* padding-left: 120px; */
+    padding-right: 100px;
+}
+.hal100{
     margin-top: 10px;
     /* padding-left: 120px; */
     padding-right: 100px;

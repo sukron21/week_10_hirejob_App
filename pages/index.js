@@ -51,7 +51,7 @@ const landingPage = () => {
           </div>
           <div className="row">
             <div className="col-md-6">
-              <div className={Styles.hal1}>
+              <div className={Styles.hal100}>
                 <h2>Talenta terbaik negri</h2>
                 <h2> untuk perubahan</h2>
                 <h2>revoslusi 4.0</h2>
