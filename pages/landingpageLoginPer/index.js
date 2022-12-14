@@ -72,19 +72,19 @@ const landingPage = () => {
                 <h2>Kenapa harus mencari tallent</h2>
                 <h2>di peworld</h2>
                 <div className={Styles.foto4}>
-                  <Image className={Styles.foto5} src="/tick 1.png" width={20} height={20} alt='' /> Lorem ipsum
+                  <Image className={Styles.foto5} src="/tick 1.png" width={25} height={25} alt='' /> Lorem ipsum
                   dolor sit amet.<br></br>
                 </div>
                 <div className={Styles.foto4}>
-                  <Image className={Styles.foto5} src="/tick 1.png" width={20} height={20}  alt=''/> Lorem ipsum
+                  <Image className={Styles.foto5} src="/tick 1.png" width={25} height={25}  alt=''/> Lorem ipsum
                   dolor sit amet.<br></br>
                 </div>
                 <div className={Styles.foto4}>
-                  <Image className={Styles.foto5} src="/tick 1.png" width={20} height={20} alt='' /> Lorem ipsum
+                  <Image className={Styles.foto5} src="/tick 1.png" width={25} height={25} alt='' /> Lorem ipsum
                   dolor sit amet.<br></br>
                 </div>
                 <div className={Styles.foto4}>
-                  <Image className={Styles.foto5} src="/tick 1.png" width={20} height={20} alt='' /> Lorem ipsum
+                  <Image className={Styles.foto5} src="/tick 1.png" width={25} height={25} alt='' /> Lorem ipsum
                   dolor sit amet.
                 </div>
               </div>
