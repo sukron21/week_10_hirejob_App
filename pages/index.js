@@ -125,15 +125,31 @@ const landingPage = () => {
               <div className="row">
                 <div className={Styles.hal3}>
                   <h2>Skill tallent</h2>
-                  <div className={`row ${Styles.foto4}`}>
-                    <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-3">
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
-                    </div>
-                    <div className="col-md-6">
                     <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png"alt='' /> Golang
+                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
+                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> PHP
+                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Javascript
+                    </div>
+                    <div className="col-md-3">
+                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
+                    <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png"alt='' /> Golang
+                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
+                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> PHP
+                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Javascript
                     </div>
                   </div>
-                  <div className={Styles.foto4}>
+                  {/* <div className={`row ${Styles.foto4}`}>
+                    <div className="col-md-3">
+                    <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Java
+                    </div>
+                    <div className="col-md-3">
+                    <Image height={20} width={30} className={Styles.foto6} src="/tick 13.png"alt='' /> Golang
+                    </div>
+                  </div> */}
+                  {/* <div className={Styles.foto4}>
                     <Image height={20} width={30} className={Styles.foto5} src="/tick 13.png" alt='' /> Kotlin
                     <Image height={20} width={30} className={Styles.foto7} src="/tick 13.png" alt='' /> c++
                   </div>
@@ -146,7 +162,7 @@ const landingPage = () => {
                     Javascript
                     <Image height={20} width={30}    className={Styles.foto8} src="/tick 13.png" alt='' /> 10+
                     Bahasa lainnya
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
