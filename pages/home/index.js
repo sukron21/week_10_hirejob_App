@@ -21,7 +21,7 @@ const Home = () => {
     console.log(Search);
 
     axios
-      .get(`${process.env.NEXT_PUBLIC_API_URL}/username/${Search}`)
+      .get(`https://dark-rose-chinchilla-cap.cyclic.app/username/${Search}`)
       .then((response) => {
         // console.log(response.data.rows)
         
