@@ -84,9 +84,7 @@ const getData = (sort, asc, limit, page) => {
 const handleSorting = () => {
   if (sort == "username") {
     setSort("id");
-  } else {
-    setSort("username");
-  }
+  } 
   getData(sort, asc, 5, page)
 };
 
@@ -123,7 +121,7 @@ const PreviousPage = () => {
     <section className="topjobs">
         <div className="container-fluid">
         <NavbarPer/>
-        {/* {JSON.stringify(data2)} */}
+        {/* {JSON.stringify(data)} */}
           <div className="row">
             <div className={`p-5 ${styles.top}`}>
               <p className={styles.title}> Top Jobs </p>
@@ -150,7 +148,7 @@ const PreviousPage = () => {
                       Sort
                     </button>
                     <ul className="dropdown-menu">
-                    <li><Link className="dropdown-item" href="#" onClick={()=> handleSortasc()}>Sortir berdasarkan{asc}</Link></li>
+                    <li><Link className="dropdown-item" href="#" onClick={()=> handleSortasc()}>Sortir berdasarkan {asc}</Link></li>
                       <li><Link className="dropdown-item" href="#" onClick={()=> handleSorting()}>Sortir berdasarkan {sort}</Link></li>
                     </ul>
                   </div>
@@ -162,7 +160,7 @@ const PreviousPage = () => {
             </div>
           </div>
           <div className="row">
-          { data.length===0?(
+          {/* { data.length===0?(
             <>isLoading...</>
           )
           :
@@ -225,7 +223,7 @@ const PreviousPage = () => {
             </div>
             </div>
           ))
-        }   
+        }    */}
         <div className={styles.pagination}>
             <button className="  my-5 col-md-2  " onClick={()=> PreviousPage()}> Preveous </button>
             <button className="  my-5 col-md-2 ">{page}</button>

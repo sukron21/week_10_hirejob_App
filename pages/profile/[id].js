@@ -198,7 +198,7 @@ const Detail = () => {
                         <div className="row g-0">
                           <div className="col-md-4">
                             <div className={style.ppengalaman}>
-                              <Image height={50} width={100} src="/tokped.png" className="" alt="..." />
+                              <Image height={90} width={90} src="/tokped.png" className="" alt="..." />
                             </div>
                           </div>
                           <div className="col-md-8">
@@ -219,7 +219,7 @@ const Detail = () => {
                         <div className="row g-0">
                           <div className="col-md-4">
                             <div className={style.ppengalaman}>
-                              <Image height={50} width={100} src="/tokped.png" className="" alt="..." />
+                              <Image height={90} width={90} src="/tokped.png" className="" alt="..." />
                             </div>
                           </div>
                           <div className="col-md-8">
