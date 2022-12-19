@@ -68,7 +68,7 @@ useEffect(() => {
 }, [sort, asc, page])
 
 const getData = (sort, asc, limit, page) => {
-  axios.get(`${process.env.NEXT_PUBLIC_API_URL}/user?sort=${sort}&asc=${asc}&limit=${limit}${
+  axios.get(`https://dark-rose-chinchilla-cap.cyclic.app/user?sort=${sort}&asc=${asc}&limit=${limit}${
     page ? `&page=${page}` : ""
   }`)
     .then((response) => {
