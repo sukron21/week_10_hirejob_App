@@ -160,7 +160,7 @@ const PreviousPage = () => {
             </div>
           </div>
           <div className="row">
-          {/* { data.length===0?(
+          { data.length===0?(
             <>isLoading...</>
           )
           :
@@ -223,7 +223,7 @@ const PreviousPage = () => {
             </div>
             </div>
           ))
-        }    */}
+        }   
         <div className={styles.pagination}>
             <button className="  my-5 col-md-2  " onClick={()=> PreviousPage()}> Preveous </button>
             <button className="  my-5 col-md-2 ">{page}</button>
