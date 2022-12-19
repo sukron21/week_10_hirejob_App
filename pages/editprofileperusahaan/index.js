@@ -87,13 +87,13 @@ const Profile = () => {
           <div className="col-md-5">
             <div className={`card ${style.bg1}`}>
               <Image height={150} width={100} src="/luis.png" className={style.pp} alt='' />
-              <div class="card-body">
+              <div className="card-body">
                 {data1.length===0?(
                   <div>IsLoading...</div>
                 ):
                 data1.map((item, index) => (
                   <div key={index}>
-                    <h4 class="card-title">{item.nama_perusahaan}</h4>
+                    <h4 className="card-title">{item.nama_perusahaan}</h4>
 
                     <p>Web Developer</p>
                     <div className="d-flex flex-row">
@@ -115,11 +115,11 @@ const Profile = () => {
           </div>
           <div className="col-md-7">
             <div className={style.pengalaman}>
-              <div class="card text-left">
-                <div class="card-header">
+              <div className="card text-left">
+                <div className="card-header">
                   <h4>Data diri</h4>
                 </div>
-                <div class="card-body">
+                <div className="card-body">
                   <form onSubmit={(e) => handlePost(e)}>
                     {data1.length===0?(
                       <div>isLoading...</div>

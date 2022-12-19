@@ -67,12 +67,12 @@ const Hire = () => {
             </div>
             <div className="col-md-7">
               <div className={style.pengalaman1}>
-                <div class="card text-left">
-                  <div class="card-header">
+                <div className="card text-left">
+                  <div className="card-header">
                     <h4>Hubungi Lous Tomlinson</h4>
                     <p>Lorem Ipsum dolor sit amet, consector adipiscing elit. In Euismod ipsum et dui rhoncus auctor</p>
                   </div>
-                  <div class="card-body">
+                  <div className="card-body">
                     <form onSubmit={(e) => handlePost(e)}>
                       <label htmlFor="inputname" className="">
                         Tujuan tentang pesan ini

@@ -84,10 +84,10 @@ const deleteRow = () => {
             <div className={`card ${style.bg1}`}>
             
               <Image src='/luis.png' height={150} width={100} className={style.pp} alt='' />
-              <div class="card-body">
+              <div className="card-body">
               {data1.map((item, index) => (
                  <div key={index}>
-                   <h4 class="card-title">{item.username}</h4>
+                   <h4 className="card-title">{item.username}</h4>
                  </div>
               ))}
                
@@ -113,11 +113,11 @@ const deleteRow = () => {
           </div>
           <div className="col-md-7">
             <div className={style.pengalaman}>
-              <div class="card text-left">
-                <div class="card-header">
+              <div className="card text-left">
+                <div className="card-header">
                   <h4>Data diri</h4>
                 </div>
-                <div class="card-body">
+                <div className="card-body">
                   <form onSubmit={(e) => handlePost(e)}>
                     {data1.map((item, index) => (
                       <div key={index}>
@@ -183,12 +183,12 @@ const deleteRow = () => {
                 </div>
               </div>
               <div className={style.inputskill}>
-                <div class="card text-left">
-                  <div class="card-header">
+                <div className="card text-left">
+                  <div className="card-header">
                     <h5>Skill</h5>
                   </div>
-                  <div class="card-body">
-                    <div class="card-text">
+                  <div className="card-body">
+                    <div className="card-text">
                       <div className="d-flex flex">
                         <input
                           type="text"
@@ -204,12 +204,12 @@ const deleteRow = () => {
               </div>
               
               <div className={style.inputskill}>
-                <div class="card text-left">
-                  <div class="card-header">
+                <div className="card text-left">
+                  <div className="card-header">
                     <h5>Pengalaman kerja</h5>
                   </div>
-                  <div class="card-body">
-                    <div class="card-text">
+                  <div className="card-body">
+                    <div className="card-text">
                       <input
                         type="text"
                         className={`form-control ${style.inputan}`}
@@ -251,12 +251,12 @@ const deleteRow = () => {
                 </div>
               </div>
               <div className={style.inputskill}>
-                <div class="card text-left">
-                  <div class="card-header">
+                <div className="card text-left">
+                  <div className="card-header">
                     <h5>Portofolio</h5>
                   </div>
-                  <div class="card-body">
-                    <div class="card-text">
+                  <div className="card-body">
+                    <div className="card-text">
                       <input
                         type="text"
                         className={`form-control ${style.inputan}`}
@@ -270,27 +270,27 @@ const deleteRow = () => {
                         placeholder="Java"
                       />
                       <div className={style.radioB}>
-                        <div class="form-check form-check-inline">
+                        <div className="form-check form-check-inline">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="radio"
                             name="inlineRadioOptions"
                             id="inlineRadio1"
                             value="option1"
                           />
-                          <label class="form-check-label" for="inlineRadio1">
+                          <label className="form-check-label" for="inlineRadio1">
                             Aplikasi Mobile
                           </label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div className="form-check form-check-inline">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="radio"
                             name="inlineRadioOptions"
                             id="inlineRadio2"
                             value="option2"
                           />
-                          <label class="form-check-label" for="inlineRadio2">
+                          <label className="form-check-label" for="inlineRadio2">
                             Aplikasi web
                           </label>
                         </div>

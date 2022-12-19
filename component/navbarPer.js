@@ -50,23 +50,23 @@ const Navbar = () => {
                   <Image src="/mail.png" className={`mx-3 ${styles.picNav}`} alt='' height={20} width={20}  />
                 </Link>
               </li>
-              <div class="dropdown">
+              <div className="dropdown">
                 <button
-                  class="btn  dropdown-toggle"
+                  className="btn  dropdown-toggle"
                   type="button"
                   data-bs-toggle="dropdown"
                 //   aria-expanded="false"
                 >
                   <Image src="/nav1 (3).png" className={` ${styles.picNav}`} height={30} width={30}  alt=''/>{" "}
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li>
-                    <Link class="dropdown-item" href="/profileperusahaan">
+                    <Link className="dropdown-item" href="/profileperusahaan">
                       Profile
                     </Link>
                   </li>
                   <li>
-                    <Link class="dropdown-item" href="#">
+                    <Link className="dropdown-item" href="#">
                       <button className={styles.btn21} onClick={logout}>Logout</button>
                     </Link>
                   </li>
