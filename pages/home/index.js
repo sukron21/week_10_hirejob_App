@@ -16,58 +16,11 @@ const Home = () => {
   const [Search, setSearch] = useState();
   const [data2, setData2] = useState([]);
   
-  const onSubmit = (e) => {
-    e.preventDefault();
-    console.log(Search);
-
-    axios
-      .get(`https://dark-rose-chinchilla-cap.cyclic.app/username/${Search}`)
-      .then((response) => {
-        // console.log(response.data.rows)
-        
-        if (response.data.rowCount == 0) {
-          alert("Data Tidak ada");
-        } else {
-          // router.push("#");
-          setData2(response.data.rows)
-          // console.log(response.data);
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-  // const search = data.rows.username;
-  // const [data2, setData2] = useState([]);
-  // useEffect(() => {
-  //   axios
-  //     .get(`${process.env.REACT_APP_BACKEND_URL}/nama/${search}`)
-  //     .then((response) => {
-  //       console.log(response.data)
-  //       setData2(response.data)
-        // console.log(response.data[0]);
-        // setTitle(response.data[0].nama_recipe)
-        // setingredients(response.data[0].ingredients.split(','))
-        // SetImage(response.data[0].image)
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-      
-  // },[]);
-  // useEffect(() => {
-  //   let data;
-  //   if(data2===''){
-  //     data=data1
-  //   }else{
-  //     data=data2
-  //   }
-  // }, [data1, data2])
 useEffect(() => {
-  getData(sort, asc, 3, page)
+  getData(sort, asc, page)
 }, [sort, asc, page])
 
-const getData = (sort, asc, limit, page) => {
+const getData = (limit) => {
   axios.get(`https://dark-rose-chinchilla-cap.cyclic.app/user?sort=${sort}&asc=${asc}&limit=${limit}${
     page ? `&page=${page}` : ""
   }`)
@@ -84,7 +37,7 @@ const handleSorting = () => {
   if (sort == "username") {
     setSort("id");
   } 
-  getData(sort, asc, 5, page)
+  getData(sort, asc, 3, page)
 };
 
 const handleSortasc = () => {
@@ -93,34 +46,53 @@ const handleSortasc = () => {
   } else {
     setAsc("asc");
   }
-  getData(sort, asc, 5, page)
+  getData(sort, asc, 3, page)
 };
 
 const NextPage = () => {
   setPage(page + 1);
-  getData(sort, asc, 5, page)
+  getData(sort, asc, 3, page)
   console.log(page);
 };
 const PreviousPage = () => {
   if (page > 1) {
     setPage(page - 1);
       console.log(page);
-      getData(sort, asc, 5, page-1)
+      getData(sort, asc, 3, page-1)
     }
   };
-// let data;
-// if (data2==""){
-// data1=data
-// }else{
-//   data2=data
-// }
+  useEffect(() => {
+    onSubmit(sort, asc, page)
+  }, [asc, page, sort])
+const onSubmit = (e,  limit) => {
+    if (e && e.preventDefault) { e.preventDefault(); }
+    // let data = {sort, asc, page}
+    axios
+      .get(`https://dark-rose-chinchilla-cap.cyclic.app/username/${Search}?sort=${sort}&asc=${asc}&limit=${limit}${
+        page ? `&page=${page}` : ""
+      }`)
+      .then((response) => {
+        console.log(response.data)
+        
+        // if (response.data.rowCount == 0) {
+        //   alert("Data Tidak ada");
+        // } else {
+          // router.push("#");
+          setData2(response.data.rows)
+          // console.log(response.data);
+        // }  
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <>
     
     <section className="topjobs">
         <div className="container-fluid">
         <NavbarPer/>
-        {/* {JSON.stringify(data)} */}
+        {JSON.stringify(data2)}
           <div className="row">
             <div className={`p-5 ${styles.top}`}>
               <p className={styles.title}> Top Jobs </p>
@@ -168,12 +140,14 @@ const PreviousPage = () => {
             <div key={index}>
                <div className={`col-md-12 mb-1 ${styles.content}`}>
               <div className="d-flex flex-row p-3">
-                <Image src='/luis.png' height={100} width={100} className="col-md-1" alt='' />
+                <Image src='/luis.png' height={100} width={100}
+                //  className="col-md-1"
+                  alt='' />
                 <div className="col-md-5 d-flex flex-column ms-5">
                   <p className={styles.textName}>{item.username}</p>
                   <p className={styles.textProfession}>Web developer</p>
                   <div className="d-flex flex-row">
-                    <Image src='/mappin.svg' height={25} width={10} alt='' />
+                    {/* <Image src='/mappin.svg' height={25} width={10} alt='' /> */}
                     <p className={`ms-2 ${styles.textLocation}`}>Lorem ipsum</p>
                   </div>
                   <div className="d-flex flex-row">
