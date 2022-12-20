@@ -92,7 +92,7 @@ const onSubmit = (e,  limit) => {
     <section className="topjobs">
         <div className="container-fluid">
         <NavbarPer/>
-        {JSON.stringify(data2)}
+        {/* {JSON.stringify(data2)} */}
           <div className="row">
             <div className={`p-5 ${styles.top}`}>
               <p className={styles.title}> Top Jobs </p>
