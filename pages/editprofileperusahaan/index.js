@@ -101,9 +101,9 @@ const Profile = () => {
                     </div>
                   </div>
                 ))}
-                <Link href="#" className={style.link2}>
+                {/* <Link href="#" className={style.link2}>
                   <button className={style.btn2}>Simpan</button>
-                </Link>
+                </Link> */}
                 <Link href="#" className={style.link2}>
                   <button onClick={(e) => deleteRow(e)} className={style.btn3}>
                     Delete Account
