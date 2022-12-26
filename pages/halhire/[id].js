@@ -69,7 +69,7 @@ const Hire = () => {
             <div className={`ps-5  ${style.bg}`}></div>
             <div className="col-md-5">
               <div className={`card ${style.bg1}`}>
-                <Image height={150} width={100} src="/luis.png" className={style.pp} alt=''/>
+                <Image height={150} width={100} src={data.photo_url} className={style.pp} alt=''/>
                 <div className="card-body">
                   <h4 className="card-title">{data.username}</h4>
                   <p>Web Developer</p>
