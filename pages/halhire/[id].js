@@ -24,6 +24,39 @@ const Hire = () => {
         // router.push("/konfirmasi");
       });
   }, [id, router]);
+  const [hire, setHire] = useState({
+    projek: "",
+    email: "",
+    phone: "",
+    deskripsi:"",
+    nama:""
+  })
+  const handlePostpengalaman = (e) => {
+    const data = JSON.parse(localStorage.getItem("data"));
+    const idperekrut = data.id
+    e.preventDefault();
+    const form = {
+      projek: hire.projek,
+      emailper: hire.email,
+      phone: hire.phone,
+      deskripsi: hire.deskripsi,
+      iduser:id,
+      idperekrut:idperekrut,
+      nama:hire.nama
+    }
+    axios
+    .post('https://dark-rose-chinchilla-cap.cyclic.app/hire/tambah', form)
+    .then((res) => {
+    console.log(res);
+    localStorage.setItem("datanotif",JSON.stringify(res.data));
+    alert("insert Success");
+   router.push('/home');
+    })
+    .catch((err) => {
+    console.log(err);
+    alert("insert Failed");
+    })
+      };
   return (
     <>
       <div className="container-fluid">
@@ -50,18 +83,29 @@ const Hire = () => {
                     up the bulk of the cards content.
                   </p>
                   <h4>Skill</h4>
-                  <div className="d-flex flex-row">
-                    <div className={style.skill}>
+                  <div className="row flex-row">
+                    {data.skill===null?
+                    (<></>):
+                    data.skill.split(',').map((e,i)=>(
+                      <>
+                      <div key={i} className={`col-md-2 ${style.skill}`}>
+                        <p>{e}</p>
+                      </div>
+                      
+                      </>
+                    ))
+                    }
+                    {/* <div className={style.skill}>
                       <p>Phyton</p>
-                    </div>
-                    <div className={style.skill}>
+                    </div> */}
+                    {/* <div className={style.skill}>
                       <p>Laravel</p>
                     </div>
                     <div className={style.skill}>
                       <p>Goolang</p>
-                    </div>
+                    </div> */}
                   </div>
-                  <div className="d-flex flex-row">
+                  {/* <div className="d-flex flex-row">
                     <div className={style.skill}>
                       <p>Phyton</p>
                     </div>
@@ -82,7 +126,7 @@ const Hire = () => {
                     <div className={style.skill}>
                       <p>Phyton</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -94,7 +138,7 @@ const Hire = () => {
                     <p>Lorem Ipsum dolor sit amet, consector adipiscing elit. In Euismod ipsum et dui rhoncus auctor</p>
                   </div>
                   <div className="card-body">
-                    <form onSubmit={(e) => handlePost(e)}>
+                    <form onSubmit={(e) => handlePostpengalaman(e)}>
                       <label htmlFor="inputname" className="">
                         Tujuan tentang pesan ini
                       </label>
@@ -104,7 +148,7 @@ const Hire = () => {
                         id="inputEmail"
                         placeholder="Projek"
                         onChange={(e) =>
-                          setUpdate({ ...update, username: e.target.value })
+                          setHire({ ...hire, projek: e.target.value })
                         }
                       />
                       <label htmlFor="inputPassword" className="">
@@ -116,7 +160,7 @@ const Hire = () => {
                         id="inputPassword"
                         placeholder="Masukan Nama Lengkap"
                         onChange={(e) =>
-                          setUpdate({ ...update, jobdesk: e.target.value })
+                          setHire({ ...hire, nama: e.target.value })
                         }
                       />
                       <label htmlFor="inputEmail" className="">
@@ -128,7 +172,7 @@ const Hire = () => {
                         id="inputEmail"
                         placeholder="Masukan Email"
                         onChange={(e) =>
-                          setUpdate({ ...update, domisili: e.target.value })
+                          setHire({ ...hire, email: e.target.value })
                         }
                       />
                       <label htmlFor="inputPassword" className="">
@@ -140,7 +184,7 @@ const Hire = () => {
                         id="Nohp"
                         placeholder="Masukan No Handphone"
                         onChange={(e) =>
-                          setUpdate({ ...update, loker: e.target.value })
+                          setHire({ ...hire, phone: e.target.value })
                         }
                       />
                       <label htmlFor="inputEmail" className="">
@@ -152,7 +196,7 @@ const Hire = () => {
                         id="inputEmail"
                         placeholder="Deskripsikan/jelaskan lebih detail"
                         onChange={(e) =>
-                          setUpdate({ ...update, diskripsi: e.target.value })
+                          setHire({ ...hire, deskripsi: e.target.value })
                         }
                       />
                       <button type="submit" className={style.btn4}>

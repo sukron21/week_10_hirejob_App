@@ -1,15 +1,13 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "../styles/navbar.module.css";
 import { useRouter } from "next/router";
-
+import axios from "axios";
 
 const Navbar = () => {
     const router=useRouter();
-  // useEffect(() => {
-  //     const data = JSON.parse(localStorage.getItem("data"));
-  // }, [])
+  
   const logout = () => {
     localStorage.clear();
     alert("Berhasil Logout")
@@ -17,6 +15,7 @@ const Navbar = () => {
   };
   return (
     <>
+    {/* {JSON.stringify(data)} */}
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
           <Link className="navbar-brand" href="/landingpageLoginPer">
@@ -46,9 +45,29 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="#">
+              <div className="dropdown">
+                <button
+                  className="btn  dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                //   aria-expanded="false"
+                >
+                 <Image src="/mail.png" className={`mx-3 ${styles.picNav}`} alt='' height={20} width={20}  /> 
+                </button>
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="#">
+                      {/* <button className={styles.btn21}>Logout</button> */}
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+                {/* <Link className="nav-link" href="#">
                   <Image src="/mail.png" className={`mx-3 ${styles.picNav}`} alt='' height={20} width={20}  />
-                </Link>
+                </Link> */}
               </li>
               <div className="dropdown">
                 <button

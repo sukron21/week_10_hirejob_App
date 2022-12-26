@@ -94,7 +94,6 @@ const Profile = () => {
                 data1.map((item, index) => (
                   <div key={index}>
                     <h4 className="card-title">{item.nama_perusahaan}</h4>
-
                     <p>Web Developer</p>
                     <div className="d-flex flex-row">
                       <Image height={150} width={100} src="/map.png" className={style.map} alt='' />

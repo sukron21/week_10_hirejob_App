@@ -25,7 +25,7 @@ const getData = (limit) => {
     page ? `&page=${page}` : ""
   }`)
     .then((response) => {
-      // console.log(response.data)
+      console.log(response.data)
       setData(response.data.rows)
     })
     .catch((error) => {
@@ -61,11 +61,14 @@ const PreviousPage = () => {
       getData(sort, asc, 3, page-1)
     }
   };
-  useEffect(() => {
-    onSubmit(sort, asc, page)
-  }, [asc, page, sort])
+  // useEffect(() => {
+  //   if(Search!==null){
+  //   onSubmit(sort, asc, page)
+  //   }
+  // }, [asc, page, sort])
 const onSubmit = (e,  limit) => {
     if (e && e.preventDefault) { e.preventDefault(); }
+    // e.preventDefault()
     // let data = {sort, asc, page}
     axios
       .get(`https://dark-rose-chinchilla-cap.cyclic.app/username/${Search}?sort=${sort}&asc=${asc}&limit=${limit}${
@@ -74,13 +77,13 @@ const onSubmit = (e,  limit) => {
       .then((response) => {
         console.log(response.data)
         
-        // if (response.data.rowCount == 0) {
-        //   alert("Data Tidak ada");
-        // } else {
+        if (response.data.rowCount == 0) {
+          alert("Data Tidak ada");
+        } else {
           // router.push("#");
           setData2(response.data.rows)
-          // console.log(response.data);
-        // }  
+          console.log(response.data);
+        }  
       })
       .catch((err) => {
         console.log(err);

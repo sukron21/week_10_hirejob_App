@@ -1,15 +1,13 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "../styles/navbar.module.css";
 import { useRouter } from "next/router";
+import axios from "axios";
 
 
 const Navbar = () => {
     const router=useRouter();
-  // useEffect(() => {
-  //     const data = JSON.parse(localStorage.getItem("data"));
-  // }, [])
   const logout = () => {
     localStorage.clear();
     alert("Berhasil Logout")
