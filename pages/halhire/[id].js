@@ -85,7 +85,7 @@ const Hire = () => {
                   <h4>Skill</h4>
                   <div className="row flex-row">
                     {data.skill===null?
-                    (<></>):
+                    (<>Mohon lengkapi data terlebih dahulu</>):
                     data.skill.split(',').map((e,i)=>(
                       <>
                       <div key={i} className={`col-md-2 ${style.skill}`}>
