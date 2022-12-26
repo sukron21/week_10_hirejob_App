@@ -55,7 +55,7 @@ const Profile = () => {
       .then((res) => {
         console.log(res);
         alert("Update Success");
-        // router.push('/home');
+        router.push('/profileperusahaan');
       })
       .catch((err) => {
         console.log(err);
