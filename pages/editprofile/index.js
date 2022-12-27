@@ -130,7 +130,7 @@ const deleteRow = () => {
         inputForm.append("photo", imagePortofolio);
         inputForm.append("type", formporto.type);
         inputForm.append("iduser", id_user);
-        axios.post(`${process.env.NEXT_PUBLIC_API_URL}/porto`, inputForm)
+        axios.post(`https://dark-rose-chinchilla-cap.cyclic.app/porto`, inputForm)
             .then((response) => {
                     alert("data berhasil ditambahkan")
                     console.log(response.data)
