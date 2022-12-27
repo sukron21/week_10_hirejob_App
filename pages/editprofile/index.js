@@ -174,7 +174,7 @@ const deleteRow = () => {
             <>
             <form onSubmit={(e) => onSubmituser(e)}>
             <div key={index} className={`card ${style.bg1}`}>
-              <Image src={item.photo_url} height={150} width={100} className={style.pp} alt='' />
+              <Image priority="true" src={item.photo_url?`${item.photo_url}`:""} height={150} width={100} className={style.pp} alt='' />
               <div onClick={() => setisActive(!isActive)} className="d-flex flex-row mt-4">
               <Image src="/pencil.png" height={15} width={15}  alt='' />
               <p >Edit</p>

@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   swcMinify: true,
-  image: {
+  images: {
     domains: ["localhost", "week-10-hirejob-app-ermn.vercel.app", "res.cloudinary.com"],
   }
 }
