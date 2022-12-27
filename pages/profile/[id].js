@@ -170,8 +170,9 @@ const Detail = () => {
                         {/* sini */}
                         {dataPengalaman.length===0?
                         (<>
-                        <h1>Mohon lengkapi data Terlebih dahulu</h1>
-                        </>):
+                        Mohon lengkapi data Terlebih dahulu 
+                        </>
+                        ):
                         dataPengalaman.map((item, index)=>(
                           <>
                           <div key={index} className="card mb-3">

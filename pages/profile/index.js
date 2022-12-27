@@ -171,7 +171,7 @@ const Profile = () => {
                         {/* sini */}
                         {dataPengalaman.length===0?
                         (<>
-                        <h1>Mohon lengkapi data Terlebih dahulu</h1>
+                        Mohon lengkapi data Terlebih dahulu
                         </>):
                         dataPengalaman.map((item, index)=>(
                           <>
