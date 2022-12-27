@@ -107,15 +107,13 @@ const deleteRow = () => {
     const id = data.id;
     const inputForm = new FormData();
     inputForm.append("photo", imageUser);
-    axios.put(`${process.env.NEXT_PUBLIC_API_URL}/user/photo/${id}`, inputForm)
+    axios.put(`https://dark-rose-chinchilla-cap.cyclic.app/user/photo/${id}`, inputForm)
             .then((response) => {
-                
                     alert("data berhasil ditambahkan")
                     console.log(response.data)
-                    router.push('/profile')
-              
+                    // router.push('/profile')
             }).catch((err) => {
-                console.error(err)
+                alert(err)
             })   
   }
   const onSubmitporto = (e) => {
@@ -172,9 +170,9 @@ const deleteRow = () => {
           <div className="col-md-5">
           {data1.map((item, index) => (
             <>
-            <form onSubmit={(e) => onSubmituser(e)}>
+            {/* <form onSubmit={(e) => onSubmituser(e)}> */}
             <div key={index} className={`card ${style.bg1}`}>
-              <Image priority="true" src={item.photo_url?`${item.photo_url}`:""} height={150} width={100} className={style.pp} alt='' />
+              <Image src={item.photo_url?`${item.photo_url}`:""} height={150} width={100} className={style.pp} alt='' />
               <div onClick={() => setisActive(!isActive)} className="d-flex flex-row mt-4">
               <Image src="/pencil.png" height={15} width={15}  alt='' />
               <p >Edit</p>
@@ -188,13 +186,8 @@ const deleteRow = () => {
             id="formFile"
             onChange={handleImageUser}
           />
-          </>)
-            }
-              {/* {data1.map((item, index) => (
-                 <div key={index}>
-                   <h4 className="card-title">{item.username}</h4>
-                 </div>
-              ))} */}
+           </>)
+             }
               <div className="card-body">
                <h4 className="card-title">{item.username}</h4>
                 <p>{item.jobdesk===null?(<> mohon lengkapi data terlebih dahulu</>):item.jobdesk}</p>
@@ -205,14 +198,14 @@ const deleteRow = () => {
                 </div>
                 <p className="">{item.loker===null?(<> mohon lengkapi data terlebih dahulu</>):item.loker}</p>
                
-                  <button type="submit" className={style.btn2}>Simpan</button>
+                  <button onClick={(e) => onSubmituser( e)} type="submit" className={style.btn2}>Simpan</button>
                
                 <Link href="#" className={style.link2}>
                   <button onClick={(e) => deleteRow( e)}  className={style.btn3}>Delete Account</button>
                 </Link>
               </div>
             </div>
-            </form>
+            {/* </form> */}
             </>
             ))}
             {/* sini */}
