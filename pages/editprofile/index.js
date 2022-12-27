@@ -109,13 +109,11 @@ const deleteRow = () => {
     inputForm.append("photo", imageUser);
     axios.put(`${process.env.NEXT_PUBLIC_API_URL}/user/photo/${id}`, inputForm)
             .then((response) => {
-                if (response.data.status != 'success') {
-                    alert(response.data.message)
-                } else {
+                
                     alert("data berhasil ditambahkan")
                     console.log(response.data)
                     router.push('/profile')
-                }
+              
             }).catch((err) => {
                 console.error(err)
             })   
