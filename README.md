@@ -49,8 +49,7 @@ This app was built with some technologies below:
   <summary>
     Landing Page
   </summary>
-<img src="/screenshoots/landing1.png" alt="Landing" />
-<img src="/screenshoots/landing2.png" alt="lannding2" />
+<img src="/screenshoots/landingpage.png" alt="Landing" />
 </details>
 
 <details>
@@ -109,4 +108,4 @@ Contributors names and contact info:
 
 - [Hirejob API](https://github.com/sukron21/Hirejob_API)
 
-- [Linkedin](www.linkedin.com/in/furqon-rahmat)
+

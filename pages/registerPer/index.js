@@ -39,7 +39,7 @@ const onSubmitHandler = (e) => {
       .then((res) => {
           console.log(res.data);
           alert("Register Succes");
-          router.push('/loginPer')
+          // router.push('/loginPer')
       })
       .catch((err) => {
           console.log(err);
